@@ -1,0 +1,8 @@
+{
+  "name": "Vela Reference — 3D Acoustic Showcase",
+  "description": "Interactive 3D hero showcase and studio configurator for Vela Reference planar-magnetic wireless headphones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

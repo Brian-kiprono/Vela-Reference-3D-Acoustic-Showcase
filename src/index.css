@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes subtleOrbitRing {
+  0% {
+    transform: scale(0.96) rotate(0deg);
+    opacity: 0.45;
+  }
+  50% {
+    transform: scale(1.03) rotate(180deg);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(0.96) rotate(360deg);
+    opacity: 0.45;
+  }
+}
+
+.animate-wave-ring {
+  animation: subtleOrbitRing 18s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-wave-ring {
+    animation: none;
+  }
+}
